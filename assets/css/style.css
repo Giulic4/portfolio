@@ -3,16 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
-.menu {
+.menu-container {
     overflow: hidden;
     background-color: #7cd5ffb6;
-    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+.info {
+    margin-left: 20px;
+}
+.galleria {
+    margin-left: 20px;
+}
+.contatti {
+    margin-left: 20px;
 }
 .content {
     height: 500px;
     margin: 0 auto;
     overflow: hidden;
     background-color: #e6e7f467;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .column {
     float: left;
@@ -21,6 +45,7 @@
     height: 350px;
     text-align: center;
     background-color: #ffffff;
+    
 }
 .footer {
     overflow: hidden;
