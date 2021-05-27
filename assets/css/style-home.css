@@ -76,12 +76,12 @@ a:active { color: #104F9F; text-decoration: underline;}
     height: 501px;
     margin: 0 auto;
     overflow: hidden;
-    background-color: #e6f1ff8c;/*#2abdda52; /*#dadcf86b  #2abdda52*/
+    /*background-color: #e6f1ff8c;/*#2abdda52; /*#dadcf86b  #2abdda52*/
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative; top: 100px;
-    z-index: -1;
+    
 }
 .column {
     float: left;
@@ -91,7 +91,7 @@ a:active { color: #104F9F; text-decoration: underline;}
     text-align: center;
     background-color: #2abdda52;
     border-radius: 7px;
-    z-index: 2;
+    position: relative;
 }
 .buttom-home {
     border: 1px solid #7571be9f;
@@ -101,7 +101,8 @@ a:active { color: #104F9F; text-decoration: underline;}
     margin: 25px auto;
     width: 60%;
     cursor: pointer;
-    z-index: 3;
+    position: relative;
+    z-index: 1;
 }
 h2 {
     padding-top: 20px;
