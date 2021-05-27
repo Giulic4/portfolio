@@ -72,11 +72,10 @@ a:active { color: #104F9F; text-decoration: underline;}
     flex-direction: column;
     background-color: #b1c4ff;
 }
-.content {
+.content { /*senza sfondo se no non visualizzo i pulsanti*/
     height: 501px;
     margin: 0 auto;
     overflow: hidden;
-    /*background-color: #e6f1ff8c;/*#2abdda52; /*#dadcf86b  #2abdda52*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,4 +117,11 @@ img {
     position: fixed; bottom: 0;
     padding:20px;
     width: 100%;
+}
+.social {
+    position: fixed; bottom: 17px; left: 90px;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
