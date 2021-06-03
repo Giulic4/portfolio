@@ -42,7 +42,7 @@ a:active { color: #104F9F; text-decoration: underline;}
     align-items: center;
     position: relative; top:1%;
     flex-wrap: wrap;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 .column {
     float: left;
@@ -104,9 +104,18 @@ h3 {
 }
 @media only screen and (max-width: 400px){ /*Mobile*/
    /*body { background-color: red;}*/
+   .content {
+       flex-direction: column;
+   }
    .column {
        margin-top: 0;
        margin-bottom: 5%;
+   }
+   .buttom-home {
+       z-index: 0;
+   }
+   p {
+       margin: 0 5%
    }
 }
 @media only screen and (min-width:401px) and (max-width:934px) { /*Tablet*/
@@ -117,15 +126,20 @@ h3 {
     .content { /*senza sfondo se no non visualizzo i pulsanti*/
         width: 190%; /*500px*/
         margin: 0 5% 85px 5%;
+        flex-direction: column;
     }
     h2 {
-        margin-top: 30px; /*30px*/
-        margin-bottom: 10px;
+        margin: 30px 15% 10px 15%;
+        /*margin-top: 30px; /*30px
+        margin-bottom: 10px;*/
         font-size: 24pt;
     }
     p {
         padding: 5px 10%;  /*5px*/
         font-size: 120%;
+    }
+    .buttom-home{
+        z-index: 0;
     }
 }
 @media only screen and (min-width:935px) { /*Desktop*/
@@ -134,7 +148,7 @@ h3 {
         margin-left: 10px;
     }
     .intestazione {
-        margin-left: -550px;
+        margin-left: -65%; /*-750px;*/
     }
     .links { 
         display: flex;
@@ -184,8 +198,22 @@ h3 {
     li {
         font-size: 18px;
     }
-    .content { 
-        margin: 85px 5% 85px 5%;
+    .content { /*senza sfondo se no non visualizzo i pulsanti*/
+        margin: 0 auto;
+        position: relative; top: 100px;
+    }
+    .column {
+        float: left;
+        width: 31%;
+        margin: 70px 1.15%;
+        height: 470px;
+        text-align: center;
+        background-color: #2abdda52;
+        border-radius: 7px;
+        position: relative;
+    }
+    img {
+        width: 70%;
     }
     h2 {
         margin-top: 30px; 
@@ -195,8 +223,5 @@ h3 {
     p {
         padding: 5px 10%;  /*5px*/
         font-size: 120%;
-    }
-    .buttom-home {
-        z-index: 0;
     }
 }
