@@ -32,7 +32,6 @@ a:active { color: #104F9F; text-decoration: underline;}
     margin: 0 auto;
 }
 .content { /*senza sfondo se no non visualizzo i pulsanti*/
-    /*height: 501px;*/
     margin-top: 0;
     margin-bottom: 60px;
     /*margin: 0 auto;*/
@@ -204,13 +203,15 @@ h3 {
     }
     .content { /*senza sfondo se no non visualizzo i pulsanti*/
         margin: 0 auto;
-        position: relative; top: 100px;
+        position: absolute; top:17%; 
+        align-items: center;
+        
     }
     .column {
         float: left;
         width: 31%;
         margin: 1.15%;
-        /*height: 70%;*/
+        
         text-align: center;
         background-color: #2abdda52;
         border-radius: 7px;
