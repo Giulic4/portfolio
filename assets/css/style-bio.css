@@ -38,30 +38,31 @@ img {
     display: block;
 }
 .container {
-    margin: 100px 0;
+    margin: 30px 0 70px 0;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative; top:1%;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
 }
 .image-content {
     float:left;
     width: 100%;
+    margin: 0 10% 2% 10%;
 }
 h2{
-    padding:0;
-    margin:0;
-    float: right;
+    float:left;
+    display: flex;
     overflow: hidden;
+    padding: 2% 30%;
 }
 .content {
     float: left;
     width: 100%; /*31%*/
     margin: 5px 1.15%; /*70px 1.15%;*/
     /*height: 350px;*/
-    text-align: left;
+    text-align: center;
     background-color: #2abdda52;
     border-radius: 10px;
     position: relative;
@@ -69,11 +70,15 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
 }
-p {
-    padding: 2% 5% 2% 43%;
-    float: right;
-    overflow: hidden;
+.paragrafo{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    text-align:justify;
+    padding: 5% 0 5% 8%;
+    font-size: medium;
 }
+
 .footer {
     overflow: hidden;
     height: 55px;
@@ -95,12 +100,19 @@ h3 {
     align-items: center;
 }
 @media only screen and (max-width: 400px){ /*Mobile*/
-
+    .content {
+        flex-direction: column;
+    }
 }
 @media only screen and (min-width:401px) and (max-width:960px) { /*Tablet*/
     body { 
-        /*background-color: yellow;*/
+        background-color: yellow;
         width: 50%;
+    }
+    .content { /*senza sfondo se no non visualizzo i pulsanti*/
+        width: 190%; /*500px*/
+        margin: 0 5% 85px 5%;
+        flex-direction: column;
     }
     img {
         margin: 0 5%;
@@ -165,6 +177,13 @@ h3 {
     }
     li {
         font-size: 18px;
+    }
+    .content { /*senza sfondo se no non visualizzo i pulsanti*/
+        margin: 0 auto;
+        position: absolute; top:7%;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 10%;
     }
     img {
         width: 70%;
@@ -241,10 +260,16 @@ h3 {
      li {
          font-size: x-large;
      }
+     .content { /*senza sfondo se no non visualizzo i pulsanti*/
+        margin: 0 auto;
+        position: absolute; top:7%;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 10%;
+    }
      img {
         width: 70%;
-    }
-
+     }
      .footer {
         height: 85px;
     }

@@ -257,7 +257,6 @@ h3 {
         margin-left: -65%; /*-750px;*/
     }
     .links { 
-        
         display: flex;
         justify-content: flex-end;
         z-index: 2;
