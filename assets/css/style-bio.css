@@ -78,7 +78,17 @@ h2{
     padding: 5% 0 5% 8%;
     font-size: medium;
 }
-
+.buttom-home {
+    border: 1px solid #7571be9f;
+    background: #006eff79;
+    border-radius: 5px; /*arrotondamento dei bordi*/
+    padding: 20px;
+    margin: 10px 19%;
+    width: 60%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
 .footer {
     overflow: hidden;
     height: 55px;
@@ -106,13 +116,22 @@ h3 {
 }
 @media only screen and (min-width:401px) and (max-width:960px) { /*Tablet*/
     body { 
-        background-color: yellow;
+        /*background-color: yellow;*/
         width: 50%;
     }
-    .content { /*senza sfondo se no non visualizzo i pulsanti*/
-        width: 190%; /*500px*/
-        margin: 0 5% 85px 5%;
-        flex-direction: column;
+    .container { /*senza sfondo se no non visualizzo i pulsanti*/
+        margin: 0 auto;
+        position: absolute; top:17%;
+        align-items: center;
+    }
+    .image-content {
+        align-items:center;
+        justify-content: center;
+        display:flex;
+    }
+    .content{
+        width: 80%;
+        margin-bottom: 10%;
     }
     img {
         margin: 0 5%;
@@ -178,17 +197,39 @@ h3 {
     li {
         font-size: 18px;
     }
-    .content { /*senza sfondo se no non visualizzo i pulsanti*/
+    .container { /*senza sfondo se no non visualizzo i pulsanti*/
         margin: 0 auto;
-        position: absolute; top:7%;
+        position: absolute; top:17%;
         align-items: center;
-        height: 100%;
-        margin-bottom: 10%;
+    }
+    .image-content {
+        float:left;
+        width: 100%;
+        margin: 0 10%;
+        align-items:center;
+        justify-content: center;
+        display:flex;
+    }
+    h2{
+        float:left;
+        display: flex;
+        overflow: hidden;
+        padding: 3% 30%;
+        font-size:xx-large;
+    }
+    .content{
+        width: 80%;
+        margin-bottom: 8%;
+    }
+    .paragrafo{
+        padding: 0 2% 2% 2%;
+    }
+    .buttom-home {
+        margin: 15px 19%;
     }
     img {
         width: 70%;
     }
-
     .footer {
         height: 65px;
     }
@@ -260,13 +301,37 @@ h3 {
      li {
          font-size: x-large;
      }
-     .content { /*senza sfondo se no non visualizzo i pulsanti*/
+     /*.content { /*senza sfondo se no non visualizzo i pulsanti
         margin: 0 auto;
         position: absolute; top:7%;
         align-items: center;
         height: 100%;
         margin-bottom: 10%;
+    }*/
+    .container { /*senza sfondo se no non visualizzo i pulsanti*/
+        margin: 0 auto;
+        position: absolute; top:17%;
+        align-items: center;
     }
+    .image-content {
+        float:left;
+        width: 100%;
+        margin: 0 10%;
+        align-items:center;
+        justify-content: center;
+        display:flex;
+    }
+    .content{
+        width: 60%;
+        margin-top: 1.5%;
+        margin-bottom: 7%;
+    }
+    .paragrafo{
+        padding: 0 5%;
+    }
+    .buttom-home {
+    margin: 20px 19%;
+}
      img {
         width: 70%;
      }
