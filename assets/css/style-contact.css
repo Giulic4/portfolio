@@ -87,6 +87,7 @@ p > a:link {color:#000000; text-decoration: none;}
 p > a:visited {color:#000000; text-decoration: none;}
 p > a:hover { color: #000000; text-decoration: underline;}
 p > a:active { color: #000000; text-decoration: underline;}
+
 .footer {
     overflow: hidden;
     height: 55px;
