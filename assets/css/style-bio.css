@@ -56,6 +56,7 @@ h2{
     display: flex;
     overflow: hidden;
     padding: 2% 30%;
+    color: #104F9F;
 }
 .content {
     float: left;
@@ -324,11 +325,11 @@ h3 {
     }
     .buttom-home {
     margin: 20px 19%;
-}
-     img {
+    }
+    img {
         width: 70%;
-     }
-     .footer {
+    }
+    .footer {
         height: 85px;
     }
     h3 {
