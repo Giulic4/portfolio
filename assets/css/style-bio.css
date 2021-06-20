@@ -301,13 +301,6 @@ h3 {
      li {
          font-size: x-large;
      }
-     /*.content { /*senza sfondo se no non visualizzo i pulsanti
-        margin: 0 auto;
-        position: absolute; top:7%;
-        align-items: center;
-        height: 100%;
-        margin-bottom: 10%;
-    }*/
     .container { /*senza sfondo se no non visualizzo i pulsanti*/
         margin: 0 auto;
         position: absolute; top:17%;
