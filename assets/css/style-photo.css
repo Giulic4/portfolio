@@ -255,7 +255,7 @@ h3 {
      li {
          font-size: x-large;
      }
-        /* Crea quattro colonne uguali che si trovano l'una accanto all'altra */
+    /* Crea quattro colonne uguali che si trovano l'una accanto all'altra */
     .column {
         flex: 25%;
         max-width: 25%;
@@ -265,7 +265,6 @@ h3 {
      img {
         width: 70%;
     }
-
      .footer {
         height: 85px;
     }
