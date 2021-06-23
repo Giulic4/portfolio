@@ -42,13 +42,6 @@ img {
   flex-wrap: wrap;
   padding: 0 4px;
 }
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
 .column img {
   margin-top: 8px;
   vertical-align: middle;
@@ -75,12 +68,26 @@ h3 {
     align-items: center;
 }
 @media only screen and (max-width: 400px){ /*Mobile*/
-
+    /*fa impilare le due colonne una sopra l'altra invece che una accanto all'altra */
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        margin: 2% 0 18% 2%;
+    }
 }
-@media only screen and (min-width:401px) and (max-width:960px) { /*Tablet*/
+@media only screen and (min-width:401px) and (max-width:660px) { /*Tablet più piccoli*/
     body { 
         /*background-color: yellow;*/
         width: 50%;
+    }
+    .container {
+        margin-right: -100%;
+    }
+    /*crea un layout a due colonne invece di quattro colonne*/
+    .column {
+        flex: 50%;
+        max-width: 40%;
+        margin: 2% 0 15% 5%;
     }
     img {
         margin: 0 5%;
@@ -89,7 +96,28 @@ h3 {
         position: fixed; bottom: 2%; 
     }
 }
-@media only screen and (min-width:961px) and (max-width: 1400px) { /*Desktop*/
+@media only screen and (min-width:661px) and (max-width:860px) { /*Tablet*/
+    body { 
+        /*background-color: yellow;*/
+        width: 50%;
+    }
+    .container {
+        margin-right: -100%;
+    }
+    /*crea un layout a due colonne invece di quattro colonne*/
+    .column {
+        flex: 50%;
+        max-width: 40%;
+        margin: 2% 0 11% 5%;
+    }
+    img {
+        margin: 0 5%;
+    }
+    h3 {
+        position: fixed; bottom: 2%; 
+    }
+}
+@media only screen and (min-width:861px) and (max-width: 1400px) { /*Desktop*/
    /*body { background-color: green;}*/
     .logo {
         margin-left: 10px;
@@ -149,7 +177,13 @@ h3 {
     img {
         width: 70%;
     }
-
+    /* Crea quattro colonne uguali che si trovano l'una accanto all'altra */
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        margin: 11% 0 8% 0;
+    }
     .footer {
         height: 65px;
     }
@@ -221,6 +255,13 @@ h3 {
      li {
          font-size: x-large;
      }
+        /* Crea quattro colonne uguali che si trovano l'una accanto all'altra */
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        margin: 9% 0 6% 0;
+    }
      img {
         width: 70%;
     }
