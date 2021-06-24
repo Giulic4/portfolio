@@ -46,18 +46,6 @@ img {
     position: relative; top:1%;
     flex-wrap: wrap;
 }
-.image-content {
-    float:left;
-    width: 100%;
-    margin: 0 10% 2% 10%;
-}
-h2{
-    float:left;
-    display: flex;
-    overflow: hidden;
-    padding: 2% 30%;
-    color: #104F9F;
-}
 .content {
     float: left;
     width: 100%; /*31%*/
@@ -71,14 +59,29 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
 }
-.paragrafo{
+.image-content {
+    float:left;
+    width: 100%;
+    margin: 0 10% 2% 10%;
+}
+h2{
+    float:left;
+    display: flex;
+    overflow: hidden;
+    padding: 2% 30%;
+    color: #104F9F;
+}
+
+/*.paragrafo{
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 70%;
     text-align:justify;
     padding: 5% 0 5% 8%;
     font-size: medium;
-}
+    flex-wrap: wrap;
+    flex-direction: column;
+}*/
 .buttom-home {
     border: 1px solid #7571be9f;
     background: #006eff79;
