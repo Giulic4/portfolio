@@ -46,6 +46,33 @@ img {
     position: relative; top:1%;
     flex-wrap: wrap;
 }
+.image-content {
+    float:left;
+    width: 100%;
+    margin: 0 10% 2% 10%;
+}
+h2{
+    float:left;
+    display: flex;
+    overflow: hidden;
+    padding: 2% 30%;
+    color: #104F9F;
+}
+.paragrafo p{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    text-align:center;
+    margin-left: -10%;
+    margin-bottom: 5%;
+    padding: 0 0 0 8%;
+    font-size: medium;
+}
+.paragrafo a:link { color: #000; text-decoration: none; }
+.paragrafo a:visited{ color: #000; text-decoration: none; }
+.paragrafo a:hover{ color: #000; text-decoration: underline; }
+.paragrafo a:active { color: #000; text-decoration: underline; }
+
 .content {
     float: left;
     width: 100%; /*31%*/
@@ -59,35 +86,13 @@ img {
     flex-wrap: wrap;
     justify-content: center;
 }
-.image-content {
-    float:left;
-    width: 100%;
-    margin: 0 10% 2% 10%;
-}
-h2{
-    float:left;
-    display: flex;
-    overflow: hidden;
-    padding: 2% 30%;
-    color: #104F9F;
-}
-
-/*.paragrafo{
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    text-align:justify;
-    padding: 5% 0 5% 8%;
-    font-size: medium;
-    flex-wrap: wrap;
-    flex-direction: column;
-}*/
 .buttom-home {
     border: 1px solid #7571be9f;
     background: #006eff79;
     border-radius: 5px; /*arrotondamento dei bordi*/
     padding: 20px;
-    margin: 10px 19%;
+    
+    margin: 25px 19% 10px 19%;
     width: 60%;
     cursor: pointer;
     position: relative;
@@ -134,8 +139,11 @@ h3 {
         display:flex;
     }
     .content{
-        width: 80%;
+        width: 85%;
         margin-bottom: 10%;
+    }
+    .paragrafo p{
+    margin-left: -3%;    
     }
     img {
         margin: 0 5%;
@@ -225,8 +233,8 @@ h3 {
         width: 80%;
         margin-bottom: 8%;
     }
-    .paragrafo{
-        padding: 0 2% 2% 2%;
+    .paragrafo p{
+        margin-left: 1%;    
     }
     .buttom-home {
         margin: 15px 19%;
@@ -319,12 +327,22 @@ h3 {
         display:flex;
     }
     .content{
-        width: 60%;
+        width: 100%;
         margin-top: 1.5%;
         margin-bottom: 7%;
+        align-items:center;
+        justify-content: center;
     }
-    .paragrafo{
-        padding: 0 5%;
+    h2{
+        float:left;
+        display: flex;
+        overflow: hidden;
+        padding: 3% 30%;
+        font-size:x-large;
+    }
+    .paragrafo p{
+        margin-left: -1%;
+        font-size:larger;
     }
     .buttom-home {
     margin: 20px 19%;
