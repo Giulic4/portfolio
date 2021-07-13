@@ -117,7 +117,32 @@ h3 {
         position: fixed; bottom: 2%; 
     }
 }
-@media only screen and (min-width:861px) and (max-width: 1400px) { /*Desktop*/
+@media only screen and (min-width:861px) and (max-width: 960px) { /*Desktop piccolo*/
+   /*body { background-color: green;}*/
+    img {
+        width: 70%;
+    }
+    .container {
+        margin-top: -10%;
+    }
+    /* Crea quattro colonne uguali che si trovano l'una accanto all'altra */
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        margin: 11% 0 8% 0;
+    }
+    .footer {
+        height: 65px;
+    }
+    h3 {
+        position: fixed; bottom: 2.5%; left: 3%;
+    }
+    .social {
+        position: fixed; bottom: 2%; left: 14.5%;
+    }
+}
+@media only screen and (min-width:961px) and (max-width: 1400px) { /*Desktop*/
    /*body { background-color: green;}*/
     .logo {
         margin-left: 10px;

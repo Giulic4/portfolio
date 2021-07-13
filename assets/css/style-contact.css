@@ -91,7 +91,6 @@ h2{
     background: #006eff79;
     border-radius: 5px; /*arrotondamento dei bordi*/
     padding: 20px;
-    
     margin: 25px 19% 10px 19%;
     width: 60%;
     cursor: pointer;
@@ -210,9 +209,11 @@ h3 {
         font-size: 18px;
     }
     .container { /*senza sfondo se no non visualizzo i pulsanti*/
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         position: absolute; top:17%;
         align-items: center;
+        margin-left: 4%;
+        margin-top: -0.2%;
     }
     .image-content {
         float:left;
@@ -314,9 +315,11 @@ h3 {
          font-size: x-large;
      }
     .container { /*senza sfondo se no non visualizzo i pulsanti*/
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         position: absolute; top:17%;
         align-items: center;
+        margin-left: 25%;
+        margin-top:-1.7%;
     }
     .image-content {
         float:left;
