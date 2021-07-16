@@ -115,6 +115,9 @@ h3 {
     .content {
         flex-direction: column;
     }
+    h2{
+        margin-left: 5%;
+    }
 }
 @media only screen and (min-width:481px) and (max-width:960px) { /*Tablet*/
     body { 
@@ -134,6 +137,9 @@ h3 {
     .content{
         width: 80%;
         margin-bottom: 10%;
+    }
+    .paragrafo{
+        margin-right: 8%;
     }
     img {
         margin: 0 5%;
@@ -207,7 +213,7 @@ h3 {
     .image-content {
         float:left;
         width: 100%;
-        margin: 0 10%;
+        margin: 0 10% 2% 10%;
         align-items:center;
         justify-content: center;
         display:flex;
@@ -225,7 +231,7 @@ h3 {
     }
     .paragrafo{
         padding: 0 10% 2% 10%;
-        line-height: 160%;
+        line-height: 170%;
     }
     .buttom-home {
         margin: 15px 19%;
@@ -312,7 +318,7 @@ h3 {
     .image-content {
         float:left;
         width: 100%;
-        margin: 0 10%;
+        margin: 0 10% 2% 10%;
         align-items:center;
         justify-content: center;
         display:flex;
